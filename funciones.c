@@ -39,16 +39,36 @@ void mostarlibros (struct libro libros[20], int i){
         if (libros[i].id!=0)
         {
             printf("%d\t\t%s\t\t%s\t\t%d\t\t%s\n",libros[i].id,
-                                                 libros[i].titulo,
-                                                  libros[i].autor,
-                                                   libros[i].anio,
-                                                    libros[i].estado);
+                                                libros[i].titulo,
+                                                libros[i].autor,
+                                                libros[i].anio,
+                                                libros[i].estado);
         } 
     }
 }
 
 //funcion buscar un lbro or titulo o id y mostrar su informacion
-/*code*/
+void buscarlibroId(struct libro libros[20],int id, int n ){
+    for (int i = 0; i < n; i++)
+    {
+        if (libros[i].id == id)
+        {
+            printf("");
+            printf("");
+            printf("");
+            printf("");
+        }
+        
+    }
+    
+}
+void buscarLibroTitulo(struct libro libros[20], char titulo[100], int n){
+    for (int i = 0; i < n; i++)
+    {
+        /* code */
+    }
+    
+}
 
 //actualizar el estado de un libr de "disponible" a prestado o viceversa"
 /*code*/

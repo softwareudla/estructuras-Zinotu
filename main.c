@@ -16,20 +16,20 @@ int main (int argc, char *argv[]) {
             i++;
             break;
         case 2:
-            mostrarLibros(libros);
+            mostrarLibros(libros, i);
             break;
         case 3:
             int id;
             printf("Ingrese el id del libro a buscar: ");
             scanf("%d", &id);
-            buscarLibroId(libros, id);
+            buscarLibroId(libros, id, i);
 
             break;
         case 4:
             char titulo[100];
             printf("Ingrese el titulo del libro a buscar: ");
             scanf("%s", titulo);
-            buscarLibroTitulo(libros, titulo);
+            buscarLibroTitulo(libros, titulo, i);
             break;
         
 
